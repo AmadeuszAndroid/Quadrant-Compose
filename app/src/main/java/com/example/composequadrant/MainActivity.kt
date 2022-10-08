@@ -3,6 +3,7 @@ package com.example.composequadrant
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -10,6 +11,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -37,10 +39,12 @@ class MainActivity : ComponentActivity() {
 fun SmallSquare(
     title: String,
     description: String,
+    backgroundColor: Color,
     modifier: Modifier
 ) {
     Column(modifier = modifier
         .fillMaxSize()
+        .background(backgroundColor)
         .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
@@ -65,11 +69,13 @@ fun Square() {
             SmallSquare(
                 "Tekst komponowany",
                 "Wyświetla tekst i postępuje zgodnie z wytycznymi Material Design.",
+                Color.Green,
                 Modifier.weight(1f)
             )
             SmallSquare(
                 "Obraz komponowany",
                 "Tworzy element do komponowania, który układa i rysuje dany obiekt klasy Painter.",
+                Color.Yellow,
                 Modifier.weight(1f)
             )
         }
@@ -77,11 +83,13 @@ fun Square() {
             SmallSquare(
                 "Wiersz komponowany",
                 "Układ, który można komponować, umieszcza swoje elementy podrzędne w kolejności poziomej.",
+                Color.Cyan,
                 Modifier.weight(1f)
             )
             SmallSquare(
                 "Kolumna komponowana",
                 "Układ, który można komponować, umieszcza swoje elementy podrzędne w kolejności pionowej.",
+                Color.LightGray,
                 Modifier.weight(1f)
             )
         }
