@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Skomponuj kwadrant</string>
+    <string name="text_title">Tekst komponowany</string>
+    <string name="text_desription">Wyświetla tekst i postępuje zgodnie z wytycznymi Material Design.</string>
+    <string name="image_title">Obraz komponowany</string>
+    <string name="image_desription">Tworzy element do komponowania, który układa i rysuje dany obiekt klasy Painter.</string>
+    <string name="row_title">Wiersz komponowany</string>
+    <string name="row_desription">Układ, który można komponować, umieszcza swoje elementy podrzędne w kolejności poziomej.</string>
+    <string name="column_title">Kolumna komponowana</string>
+    <string name="column_desription">Układ, który można komponować, umieszcza swoje elementy podrzędne w kolejności pionowej.</string>
 </resources>

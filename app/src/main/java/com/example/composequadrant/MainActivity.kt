@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -67,28 +68,28 @@ fun Square() {
     Column {
         Row(Modifier.weight(1f)) {
             SmallSquare(
-                "Tekst komponowany",
-                "Wyświetla tekst i postępuje zgodnie z wytycznymi Material Design.",
+                stringResource(R.string.text_title),
+                stringResource(R.string.text_desription),
                 Color.Green,
                 Modifier.weight(1f)
             )
             SmallSquare(
-                "Obraz komponowany",
-                "Tworzy element do komponowania, który układa i rysuje dany obiekt klasy Painter.",
+                stringResource(R.string.image_title),
+                stringResource(R.string.image_desription),
                 Color.Yellow,
                 Modifier.weight(1f)
             )
         }
         Row(Modifier.weight(1f)) {
             SmallSquare(
-                "Wiersz komponowany",
-                "Układ, który można komponować, umieszcza swoje elementy podrzędne w kolejności poziomej.",
+                stringResource(R.string.row_title),
+                stringResource(R.string.row_desription),
                 Color.Cyan,
                 Modifier.weight(1f)
             )
             SmallSquare(
-                "Kolumna komponowana",
-                "Układ, który można komponować, umieszcza swoje elementy podrzędne w kolejności pionowej.",
+                stringResource(R.string.column_title),
+                stringResource(R.string.column_desription),
                 Color.LightGray,
                 Modifier.weight(1f)
             )
